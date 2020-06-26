@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} contact\-form\-7(.+)contact-forms(.+)feedback
+RewriteRule .* process_form.php
+
+</IfModule>
